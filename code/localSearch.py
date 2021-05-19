@@ -132,7 +132,12 @@ def LocalSearch(A, k, r, T, d):
             Lam, U =  np.linalg.eig(matSuppRC(A, Supp, Supp))
             V = U[:, [i for i in range(r)]]
         else:
-            return V
+            return setCompleteV(V, Supp, d, r)
+    return setCompleteV(V, Supp, d, r)
+
+def setCompleteV(Vt, Supp, d, r):
+    V = np.zeros((d,r))
+    V[Supp,:] = copy.deepcopy(Vt)
     return V
 
 
