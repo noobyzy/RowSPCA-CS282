@@ -30,8 +30,9 @@ You can find a simple example in `main.py`.
 │    └── baseline1.py    - The baseline 1 in the paper.
 │    └── baseline2.py    - The baseline 2 in the paper.
 │    └── localSearch.py  - The local search algorithm to find a lower (primal) bound.
-│    └── main.py         - Draw the figs.
+│    └── main.py         - A simple example.
 │    └── PLA_SOCP.py     - Solve the SOCP via PLA technique. Run in gurobipy. 
+│    └── Plot.mlx        - Plot the figs in our report. Datas from result.xlsx
 │ 
 │
 ├──  dataset  
@@ -39,8 +40,11 @@ You can find a simple example in `main.py`.
 │    └── Others  - Other dataset.
 │
 │
-└──  paper
-     └── wang20e.pdf     - A modified paper of the conference version.
+├──  paper
+│    └── wang20e.pdf     - A modified paper of the conference version.
+│
+│
+└──  result              - auxiliary files for plotting figures.
 
 ```
 
